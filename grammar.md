@@ -1,3 +1,7 @@
+##GUILE Grammar
+
+###Grammar Rules
+
 1. start: prologue GUI\_START gui\_section GUI\_END epilogue start | EPS
 2. prologue: ([a-zA-Z0-9_])* NEWLINE
 3. epilogue: ([a-zA-Z0-9_])* NEWINE
@@ -16,8 +20,8 @@
 16. association: var_use ASSOC func_name
 
 ###Token Classes
-1. GUI\_START %%
-2. GUI\_END %%
+1. GUI\_START "%%"
+2. GUI\_END "%%"
 3. NEWLINE "\n"
 4. COLON ":"
 5. COMMA ","
