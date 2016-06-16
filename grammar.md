@@ -13,10 +13,11 @@
 9. composition_section: composition composition_section | EPS 
 10. composition: OPENSQUARE comp_list CLOSESQUARE
 11. comp_list: var_use operator var_use | var_use operator comp_list
-12. var_use: var_name | OPENPAREN comp_list CLOSEPAREN
+12. var_use: varname | OPENPAREN comp_list CLOSEPAREN
 13. operator: COMMA | FWD_SLASH
 14. chaining_section: chain chaining_section | EPS
 15. chain: event_name COLON association
+16. event_name: "on_" varname
 16. association: var_use ASSOC func_name
 
 ###Token Classes
