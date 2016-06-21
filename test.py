@@ -1,8 +1,8 @@
-from guile import guile_parser
+from guile import guile_parser as gp
 
 #Testing
 f = open("sample", "r")
-ab = gui_section.parseString(f.read())
+ab = gp.gui_section.parseString(f.read())
 print ab.dump()
 f.close()
 
