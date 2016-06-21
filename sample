@@ -1,2 +1,9 @@
-Textbox: a,b,c
-Textbox: w,x,y
+#
+# Program to create a simple data entry form
+#
+
+Textbox: tb_name, tb_email
+Button: btn_submit, btn_help
+  
+panel1 = [ tb_name / tb_email ]
+main_gui = [ panel1 / [btn_submit , btn_help] ]

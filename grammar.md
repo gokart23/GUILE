@@ -11,7 +11,7 @@
 7. varname_list: varname COMMA varname_list | EPS
 8. varname: ([a-zA-Z0-9_])+
 9. composition_section: composition composition_section | EPS 
-10. composition: OPENSQUARE comp_list CLOSESQUARE
+10. composition: varuse ASSIGN OPENSQUARE comp_list CLOSESQUARE
 11. comp_list: var_use operator var_use | var_use operator comp_list
 12. var_use: varname | OPENPAREN comp_list CLOSEPAREN
 13. operator: COMMA | FWD_SLASH
@@ -33,3 +33,4 @@
 10. CLOSEPAREN ")"
 11. GTYPE "Textbox"|"Button"
 12. ASSOC "->"
+13. ASSIGN "="
